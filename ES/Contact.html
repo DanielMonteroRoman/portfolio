@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Montero Games</title>
+  <link rel="icon" href="../imagenes/colores sin fondo2.ico" />
+  <link rel="stylesheet" href="../estilo2.css" />
+ <script>
+        (function() {
+            
+            var userLang = navigator.language || navigator.userLanguage;            
+            
+            var langCode = userLang.substring(0, 2).toLowerCase();
+            var spanishGroup = ['es', 'gl', 'eu', 'ca'];
+            
+            
+            if (spanishGroup.includes(langCode)) {
+                window.location.replace('/es/'); 
+            }            
+           
+        })();
+    </script>
+
+
+</head>
+
+<body class="dark-mode">
+  <header>
+    <section id="ham_menu" class="">
+      <button id="cerrar" class="button_ham">
+        <img src="../imagenes/Close.png" alt="" />
+      </button>
+      <div>
+        <ul>
+          <li><a href="principal.html">UN VISTAZO</a></li>
+          <li><a href="about_me.html">SOBRE MÍ</a></li>
+          <li><a href="Projects.html">PROYECTOS</a></li>
+          <li class="seleccionado">CONTACTO</li>
+        </ul>
+        <ul id="ham_idioma">
+          <li class="seleccionado">ES</li>
+          <li><a href="../EN/Contact.html">EN</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="cabecera">
+      <section id="hamburger">
+        <button><img src="../imagenes/ham_blanco2.png" alt="" /></button>
+      </section>
+
+      <section class="cabecera-izquierda">
+        <img src="../imagenes/colores sin fondo3.png" alt="logo monterogames" />
+      </section>
+
+      <section id="nav">
+        <ul>
+          <li><a href="principal.html">UN VISTAZO</a></li>
+          <li><a href="about_me.html">SOBRE MÍ</a></li>
+           <li><a href="Projects.html">PROYECTOS</a></li>
+          <li class="seleccionado">CONTACTO</li>
+        </ul>
+      </section>
+
+      <section class="cabecera-derecha" id="idiomas">
+        <ul>
+          <li class="seleccionado">ES</li>
+          <li><a href="../EN/Contact.html">EN</a></li>
+        </ul>
+      </section>
+
+      <img id="tema" src="../imagenes/circle.png" alt="boton_tema" />
+    </div>
+  </header>
+
+  <main id="contactos">
+   <section id="contacto" class="contacto">
+  <h2>Contáctame</h2>
+  <p>¿Tienes una idea, proyecto o pregunta? ¡Hablemos!</p>
+
+  <form id="contact-form" action="https://formspree.io/f/mpwooozd" class="contact-form" method="POST"> <!--aquí---------------------------------------------------------------------------------------*/-->
+    
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="email">Correo electrónico</label>
+    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+    <label for="message">Mensaje</label>
+    <textarea id="message" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+    <button type="submit">Enviar mensaje</button>
+
+    <p id="form-status"></p>
+  </form>
+
+
+
+</section>
+
+
+
+  </main>
+
+   <footer>
+      <section id="redes">
+        <a href="" target="_blank"
+          ><img src="../imagenes/linkedin.png" alt="linkedin"
+        /></a>
+        <a href="https://x.com/DevDMontero" target="_blank"
+          ><img src="../imagenes/X_logo_2023_(white).svg.png" alt="x"
+        /></a>
+
+        <a href="" target="_blank"
+          ><img src="../imagenes/gmail.png" alt="correo"
+        /></a>
+        <a href="https://danielmontero.itch.io/" target="_blank"
+          ><img src="../imagenes/itch-io.png" alt="itchio" />
+        </a>
+        <a href="" target="_blank"
+          ><img src="../imagenes/GitHub_Invertocat_Light.png" alt="twitch" />
+        </a>
+      </section>
+      <address><a>daniel.monterogames@gmail.com</a></address>
+    </footer>
+
+  <div id="overlay">
+    <img id="overlay-img" src="" alt="Imagen ampliada" />
+    <p>
+     
+    </p>
+  </div>
+   <script src="../control.js" defer></script>
+</body>
+
+</html>
