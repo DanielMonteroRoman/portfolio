@@ -1198,7 +1198,7 @@ main p a {
   }
 
    .title {
-  width: 100%;    
+  width: 150%;    
 
 }
 
@@ -1215,6 +1215,7 @@ h1{
 
     font-size: 27px;
   }
+
 }
 
 .mensaje-exito {
